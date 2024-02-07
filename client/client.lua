@@ -60,6 +60,7 @@ RegisterNetEvent("jim-notepad:Client:CreateNote", function()
 			anon = dialog.isAnon or dialog[3],
 			image = dialog.image or nil,
 		})
+		TriggerEvent('wais:addmissionxp:notepad', 1) --added by pamela for wais battlepass
     end
 end)
 
